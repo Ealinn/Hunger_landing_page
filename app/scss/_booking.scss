@@ -1,0 +1,19 @@
+.booking{
+  &__inner{
+    padding-top: 57px;
+    padding-bottom: 45px;
+  }
+  &__info{
+    text-align: center;
+    color: rgba($mineShaftColor, 0.5);
+    line-height: 1;
+    font-size: 12px;
+  }
+  &__info-bold{
+    font-weight: 700;
+  }
+  &__phone{
+    color: inherit;
+    font-weight: 700;
+  }
+}
