@@ -153,12 +153,39 @@
           <div class="section__item">
             <div class="section__content">
               <h2 class="section__title title">book a table</h2>
-              <form class="booking__form" action="/">
-                <input type="text" name="Name" placeholder="Name" required />
-                <input type="email" name="Email" placeholder="Email" required />
-                <input type="text" name="Phone" placeholder="Phone" required >
-                <input type="date" name="Date" placeholder="Date (mm/dd)" required >
-                <input type="time" name="Time" placeholder="Time" required >
+              <form class="booking__form booking-form" action="/">
+                <input class="booking-form__input" type="text" name="Name" placeholder="Name" required />
+                <input class="booking-form__input" type="email" name="Email" placeholder="Email" required />
+                <input class="booking-form__input" type="text" name="Phone" placeholder="Phone" required >
+                <select class="booking-form__select" name="People" id="people-select" data-placeholder="People" required >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="1">4</option>
+                  <option value="2">5</option>
+                  <option value="3">6</option>
+                  <option value="3">7</option>
+                  <option value="1">8</option>
+                  <option value="2">9</option>
+                  <option value="3">10</option>
+                </select>
+                <input class="booking-form__input" type="text" name="Date" placeholder="Date (mm/dd)" required />
+                <select class="booking-form__select" name="Time" id="time-select" data-placeholder="Time" required >
+                  <option value="08:00 PM">08:00 PM</option>
+                  <option value="08:30 PM">08:30 PM</option>
+                  <option value="09:00 PM">09:00 PM</option>
+                  <option value="09:30 PM">09:30 PM</option>
+                  <option value="10:00 PM">10:00 PM</option>
+                  <option value="10:30 PM">10:30 PM</option>
+                  <option value="11:00 PM">11:00 PM</option>
+                  <option value="11:30 PM">11:30 PM</option>
+                  <option value="12:00 AM">12:00 AM</option>
+                  <option value="12:30 AM">12:30 AM</option>
+                  <option value="01:00 AM">01:00 AM</option>
+                  <option value="01:30 AM">01:30 AM</option>
+                  <option value="02:00 AM">02:00 AM</option>
+                </select>
+                <button class="btn booking-form__btn">REZERVARI</button>
               </form>
             </div>
             <!-- /.section__content -->
