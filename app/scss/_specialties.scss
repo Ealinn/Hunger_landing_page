@@ -1,0 +1,43 @@
+.specialties {
+  background-image: url(../images/specialties-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: $whiteColor;
+
+  &__inner {
+    padding-top: 43px;
+    padding-bottom: 57px;
+  }
+
+  &__slider {
+    position: relative;
+  }
+}
+
+.specialties__slider {
+  .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+  }
+  .slick-dots li {
+    margin-right: 20px;
+  }
+  .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 100%;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  .slick-active button {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}

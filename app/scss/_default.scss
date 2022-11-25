@@ -71,10 +71,10 @@ button {
     align-items: center;
   }
 
-  &__inner--booking {
-    padding-top: 57px;
-    padding-bottom: 43px;
-  }
+  // &__inner--booking {
+  //   padding-top: 57px;
+  //   padding-bottom: 43px;
+  // }
 
   &__item {
     display: flex;
@@ -192,6 +192,22 @@ button {
 
 .btn--form {
   width: 100%;
+}
+
+.form-input {
+  height: 60px;
+  padding: 20px;
+  line-height: 1.357; //19px
+  color: rgba(51, 51, 51, 0.5);
+  border-radius: 5px;
+  background-color: #E5E5E5;
+  outline: none;
+  border: none;
+
+  &::placeholder {
+    color: rgba(51, 51, 51, 0.5);
+    opacity: 1;
+  }
 }
 
 .map{
