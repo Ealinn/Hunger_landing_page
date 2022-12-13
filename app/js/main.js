@@ -98,4 +98,18 @@ $(function(){
         // autoplay: true,
         // autoplaySpeed: 1000,
     });
+
+// Gallery (Magnific popup)
+    $('.gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        closeBtnInside: false,
+        fixedBgPos: false,
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close gallery__close">&#215;</button>',
+        gallery: {
+            enabled:true,
+            navigateByImgClick: true,
+            arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir% gallery__arrow"></button>',
+        }
+    });
 });

@@ -26,8 +26,20 @@
     bottom: 0;
     z-index: 2;
     width: 80px;
-    padding: 20px;
+    height: 100%;
     background-color: $blackColor;
+
+    p {
+      font-family: 'Banny';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 12px;
+      display: flex;
+      align-items: center;
+      text-indent: 20px;
+      text-transform: uppercase;
+    }
   }
 
   &__cats--left {
@@ -36,36 +48,16 @@
   }
 
   &__cats--left p {
-    transform: rotate(90deg);
+    writing-mode: vertical-rl;
   }
 
   &__cats--right {
     left: 0;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 0px 5px 5px 0px;
+    transform: rotate(180deg);
   }
 
   &__cats--right p {
-    transform: rotate(-90deg);
+    writing-mode: vertical-rl;
   }
-
-  // &__images::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 80px;
-  //   height: 100%;
-  //   padding: 20px;
-  //   top: 0;
-  //   background-color: $blackColor;
-  //   // border: 20px solid $accentColor;
-  //   // border-radius: 5px;
-  //   // transform: translateY(-50%);
-  // }
-  // &__images--left::before {
-  //   right: 0;
-  //   border-radius: 0px 5px 5px 0px;
-  // }
-  // &__images--right::before {
-  //   left: 0;
-  //   border-radius: 5px 0px 0px 5px;
-  // }
 }
